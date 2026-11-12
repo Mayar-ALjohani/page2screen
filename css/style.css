@@ -113,6 +113,58 @@ main {
 .jump a {
     color: #FFD60A;
 }
+/* slider box */
+.slider {
+    position: relative;
+    width: 600px;
+    height: 340px;
+    margin: 20px auto;
+    border: 3px solid #FFD60A;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* image is the bottom layer */
+#slideImg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+/* text is on top of the image */
+.slide-text {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 560px;
+    padding: 5px 20px;
+    z-index: 2;
+    background-color: rgba(6, 26, 69, 0.8);
+}
+
+.slide-text h3 {
+    margin: 5px 0px;
+    color: #FFD60A;
+}
+.center {
+    text-align: center;
+}
+
+/* yellow buttons */
+.btn {
+    background-color: #FFD60A;
+    color: #061A45;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-weight: bold;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+    background-color: #FFFFFF;
+}
 footer {
     background-color: #061A45;
     text-align: center;

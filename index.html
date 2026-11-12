@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="showMovie()">
 
     <!-- header and navbar -->
     <header id="top">
@@ -36,6 +36,21 @@
             <a href="#movies">Movies</a> |
             <a href="#books">Books</a>
         </p>
+                <!-- slider: the text is on top of the image -->
+        <section>
+            <div class="slider" onmouseover="lightBorder(this)" onmouseout="normalBorder(this)">
+                <img id="slideImg" src="images/harrypotter.jpg" alt="movie picture" width="600" height="340">
+                <div class="slide-text">
+                    <h3 id="slideTitle">Harry Potter</h3>
+                    <p id="slideInfo">Based on the novel by J.K. Rowling</p>
+                </div>
+            </div>
+                           <!-- buttons to change the movie -->
+               <p class="center">
+                   <button class="btn" onclick="prevMovie()">&lt; Prev</button>
+                   <button class="btn" onclick="nextMovie()">Next &gt;</button>
+               </p>
+        </section>
         <!-- our intro -->
         <section id="intro">
             <article class="card">
@@ -56,7 +71,7 @@
                 </ul>
             </article>
         </section>
-                <!-- movies table -->
+               <!-- movies table -->
         <section id="movies">
             <h2 class="title">Movies &amp; Their Books</h2>
             <table class="movie-table">
@@ -73,33 +88,33 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Dune (2021)</td>
-                        <td>2h 35m</td>
-                        <td>Timothée Chalamet, Zendaya</td>
-                        <td>A young man must protect his family on a desert planet.</td>
-                        <td>Frank Herbert</td>
-                        <td>412</td>
-                    </tr>
-                    <tr>
                         <td>Harry Potter and the Philosopher's Stone (2001)</td>
                         <td>2h 32m</td>
                         <td>Daniel Radcliffe, Emma Watson</td>
                         <td>A boy finds out he is a wizard and goes to a magic school.</td>
                         <td>J.K. Rowling</td>
-                        <td>223</td>
+                        <td>340</td>
                     </tr>
                     <tr>
-                        <td>The Hunger Games (2012)</td>
-                        <td>2h 22m</td>
-                        <td>Jennifer Lawrence, Josh Hutcherson</td>
-                        <td>A girl joins a deadly game to save her little sister.</td>
-                        <td>Suzanne Collins</td>
-                        <td>374</td>
+                        <td>Alice in Wonderland (2010)</td>
+                        <td>1h 48m</td>
+                        <td>Mia Wasikowska, Johnny Depp</td>
+                        <td>A girl falls down a rabbit hole into a strange magic world.</td>
+                        <td>Lewis Carroll</td>
+                        <td>208</td>
+                    </tr>
+                    <tr>
+                        <td>Charlie and the Chocolate Factory (2005)</td>
+                        <td>1h 55m</td>
+                        <td>Johnny Depp, Freddie Highmore</td>
+                        <td>A poor boy wins a golden ticket to visit Willy Wonka's factory.</td>
+                        <td>Roald Dahl</td>
+                        <td>208</td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="6">* number of pages is from the first edition</td>
+                        <td colspan="6">* number of pages is from the English paperback sold at Jarir</td>
                     </tr>
                 </tfoot>
             </table>
