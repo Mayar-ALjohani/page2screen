@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Movie and book reviews in one place">
@@ -8,10 +9,11 @@
     <!-- css file -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <!-- header and navbar -->
-    <header>
+    <header id="top">
         <h1 class="logo">Page2Screen</h1>
         <nav>
             <ul class="menu">
@@ -27,6 +29,95 @@
     <main>
         <h2>Welcome to Page2Screen</h2>
         <p>Discover movies and the books behind them.</p>
+               <!-- links to parts in the same page -->
+        <p class="jump">
+            Jump to:
+            <a href="#intro">Our Idea</a> |
+            <a href="#movies">Movies</a> |
+            <a href="#books">Books</a>
+        </p>
+        <!-- our intro -->
+        <section id="intro">
+            <article class="card">
+                <h2>What is Page2Screen?</h2>
+                <p>
+                    Many movies are based on books, but the info about them is
+                    in different websites. Page2Screen puts everything in one place:
+                    the movie story, duration and cast, and also the book behind it,
+                    its author, number of pages and where to buy it.
+                </p>
+
+                <h3>Why use our website?</h3>
+                <ul>
+                    <li>Movie and book info in one page</li>
+                    <li>Know the author before you watch</li>
+                    <li>Links to stores to buy the book</li>
+                    <li>Save time instead of searching many websites</li>
+                </ul>
+            </article>
+        </section>
+                <!-- movies table -->
+        <section id="movies">
+            <h2 class="title">Movies &amp; Their Books</h2>
+            <table class="movie-table">
+                <caption>Movies based on books</caption>
+                <thead>
+                    <tr>
+                        <th>Movie</th>
+                        <th>Duration</th>
+                        <th>Main Cast</th>
+                        <th>Story</th>
+                        <th>Book Author</th>
+                        <th>Pages</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dune (2021)</td>
+                        <td>2h 35m</td>
+                        <td>Timothée Chalamet, Zendaya</td>
+                        <td>A young man must protect his family on a desert planet.</td>
+                        <td>Frank Herbert</td>
+                        <td>412</td>
+                    </tr>
+                    <tr>
+                        <td>Harry Potter and the Philosopher's Stone (2001)</td>
+                        <td>2h 32m</td>
+                        <td>Daniel Radcliffe, Emma Watson</td>
+                        <td>A boy finds out he is a wizard and goes to a magic school.</td>
+                        <td>J.K. Rowling</td>
+                        <td>223</td>
+                    </tr>
+                    <tr>
+                        <td>The Hunger Games (2012)</td>
+                        <td>2h 22m</td>
+                        <td>Jennifer Lawrence, Josh Hutcherson</td>
+                        <td>A girl joins a deadly game to save her little sister.</td>
+                        <td>Suzanne Collins</td>
+                        <td>374</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">* number of pages is from the first edition</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+                <!-- where to buy the books -->
+        <section id="books">
+            <h2 class="title">Where to Buy the Books</h2>
+            <div class="card">
+                <p>You can buy the books from these stores:</p>
+                <ol>
+                    <li><a href="https://www.jarir.com">Jarir Bookstore</a></li>
+                    <li><a href="https://www.amazon.sa">Amazon Saudi Arabia</a></li>
+                    <li><a href="https://www.noon.com">Noon</a></li>
+                </ol>
+            </div>
+                        <!-- go back to the top of the page -->
+            <p class="jump"><a href="#top">Back to top</a></p>
+        </section>
     </main>
 
     <footer>
@@ -36,4 +127,5 @@
     <!-- js file -->
     <script src="js/script.js"></script>
 </body>
+
 </html>

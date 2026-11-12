@@ -63,7 +63,56 @@ main {
     padding: 20px;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
+/* yellow titles */
+.title {
+    color: #FFD60A;
+}
 
+/* movies table */
+.movie-table {
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #061A45;
+    border-collapse: collapse;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.movie-table caption {
+    color: #FFFFFF;
+    padding: 8px;
+}
+
+/* table head */
+.movie-table th {
+    background-color: #061A45;
+    color: #FFD60A;
+    padding: 10px;
+}
+
+.movie-table td {
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+}
+
+/* table foot */
+.movie-table tfoot td {
+    font-size: 12px;
+    font-style: italic;
+}
+/* links inside the white card */
+.card a {
+    color: #0A2A6B;
+    font-weight: bold;
+}
+
+/* yellow when hover */
+.card a:hover {
+    color: #FFD60A;
+}
+/* internal links in yellow */
+.jump a {
+    color: #FFD60A;
+}
 footer {
     background-color: #061A45;
     text-align: center;
