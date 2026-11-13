@@ -7,6 +7,24 @@
     <title>Page2Screen - About Us</title>
     <!-- css file -->
     <link rel="stylesheet" href="css/style.css">
+            <!-- internal css, only for this page -->
+    <style type="text/css">
+        ol li {
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        .team-card {
+            float: left;
+            width: 40%;
+            margin-right: 5%;
+            text-align: center;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
 </head>
 <body>
 
@@ -24,9 +42,57 @@
     </header>
 
     <!-- page content -->
-    <main>
+        <main>
         <h2>About Us</h2>
-        <p>Learn more about our team and our idea.</p>
+
+        <!-- our story -->
+        <section>
+            <article class="card">
+                <h3>Our Story</h3>
+                <p>
+                   
+                    We are two friends who love watching movies and reading books.
+                    Every time we watched a movie, we wondered if it was based on a book
+                    and where we could find it. That is why we created Page2Screen.
+                
+                </p>
+
+                <h3>Why use our website?</h3>
+                <ul>
+                    <li>Movie and book info in one page</li>
+                    <li>Know the author before you watch</li>
+                    <li>Links to stores to buy the book</li>
+                    <li>Save time instead of searching many websites</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- our goals -->
+        <section>
+            <h3 class="title">Our Goals</h3>
+            <ol>
+                <li>Give full info about movies (story, duration, cast).</li>
+                <li>Show the book behind each movie and its author.</li>
+                <li>Help users find where to buy the book.</li>
+            </ol>
+        </section>
+        <!-- our team -->
+        <section>
+            <h3 class="title">Our Team</h3>
+            <div class="card team-card">
+                <h4>Mayar aljohani</h4>
+                <p>Home page, About page and design</p>
+            </div>
+            <div class="card team-card">
+                <h4>Eithar albeladi</h4>
+                <p>Login, Sign up and form validation</p>
+            </div>
+            <div class="clear"></div>
+        </section>
+        <!-- inline css -->
+        <p style="color: #FFD60A; font-style: italic; text-align: center;">
+            "Every great movie starts with a great story."
+        </p>
     </main>
 
     <footer>
