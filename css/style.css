@@ -18,13 +18,14 @@ header {
 .logo {
     float: left;
     margin: 0;
-    line-height: 60px;
+    padding-top: 11px;
     color: #FFD60A;
 }
 
 /* navbar on the right */
 nav {
     float: right;
+    padding-top: 21px;
 }
 
 .menu {
@@ -37,7 +38,7 @@ nav {
 .menu li {
     display: inline;
     margin-left: 20px;
-    line-height: 60px;
+    
 }
 
 .menu a {
@@ -51,7 +52,7 @@ nav {
     color: #FFD60A;
 }
 
-main {
+.content {
     padding: 30px 40px;
 }
 
@@ -125,7 +126,7 @@ main {
 }
 
 /* image is the bottom layer */
-#slideImg {
+.slide-img {
     position: absolute;
     top: 0px;
     left: 0px;

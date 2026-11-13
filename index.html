@@ -26,32 +26,33 @@
     </header>
 
     <!-- page content -->
-    <main>
+    <div class="content">
         <h2>Welcome to Page2Screen</h2>
         <p>Discover movies and the books behind them.</p>
-               <!-- links to parts in the same page -->
+        <!-- links to parts in the same page -->
         <p class="jump">
             Jump to:
             <a href="#intro">Our Idea</a> |
             <a href="#movies">Movies</a> |
             <a href="#books">Books</a>
         </p>
-                <!-- slider: the text is on top of the image -->
+        <!-- slider: the text is on top of the image -->
         <section>
             <div class="slider" onmouseover="lightBorder(this)" onmouseout="normalBorder(this)">
-                <img id="slideImg" src="images/harrypotter.jpg" alt="movie picture" width="600" height="340">
+                <img id="slideImg" class="slide-img" src="images/harrypotter.jpg" alt="movie picture" width="600"
+                    height="340">
                 <div class="slide-text">
                     <h3 id="slideTitle">Harry Potter</h3>
                     <p id="slideInfo">Based on the novel by J.K. Rowling</p>
                 </div>
             </div>
-                           <!-- buttons to change the movie -->
-               <p class="center">
-                   <button class="btn" onclick="prevMovie()">&lt; Prev</button>
-                   <button class="btn" onclick="nextMovie()">Next &gt;</button>
-               </p>
+            <!-- buttons to change the movie -->
+            <p class="center">
+                <input type="button" class="btn" value="< Prev" onclick="prevMovie()">
+                <input type="button" class="btn" value="Next >" onclick="nextMovie()">
+            </p>
         </section>
-                     <!-- our intro -->
+        <!-- our intro -->
         <section id="intro">
             <article class="card">
                 <h2>What is Page2Screen?</h2>
@@ -62,7 +63,7 @@
                 </p>
             </article>
         </section>
-               <!-- movies table -->
+        <!-- movies table -->
         <section id="movies">
             <h2 class="title">Movies &amp; Their Books</h2>
             <table class="movie-table">
@@ -110,7 +111,7 @@
                 </tfoot>
             </table>
         </section>
-                <!-- where to buy the books -->
+        <!-- where to buy the books -->
         <section id="books">
             <h2 class="title">Where to Buy the Books</h2>
             <div class="card">
@@ -121,10 +122,10 @@
                     <li><a href="https://www.noon.com">Noon</a></li>
                 </ol>
             </div>
-                        <!-- go back to the top of the page -->
+            <!-- go back to the top of the page -->
             <p class="jump"><a href="#top">Back to top</a></p>
         </section>
-    </main>
+    </div>
 
     <footer>
         <p>&copy; 2026 Page2Screen - CPIS-358</p>
