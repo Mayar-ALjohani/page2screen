@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Movie and book reviews in one place">
@@ -7,6 +7,15 @@
     <title>Page2Screen - Login</title>
     <!-- css file -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- internal css: only for the login page -->
+    <style>
+        #resetBox {
+            display: none;
+            margin-top: 20px;
+            padding-top: 5px;
+            border-top: 1px solid #CCCCCC;
+        }
+    </style>
 </head>
 <body>
 
@@ -24,9 +33,39 @@
     </header>
 
     <!-- page content -->
-    <main>
-    <h2>Login</h2>
-    <p>HI! Log in to see your favorite movies and books.</p>
+    <main class="auth-page">
+        <section class="auth-card">
+            <h2>Welcome Back to Page2Screen</h2>
+            <p class="auth-sub">Log in to track your favorite book-to-screen adaptations.</p>
+
+            <form id="loginForm" onsubmit="return checkLogin()">
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" name="email" placeholder="example@email.com">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+
+                <p class="check-row">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                    <!-- inline css: link on the right -->
+                    <a href="#" style="float: right;" onclick="showReset(); return false;">Forgot password?</a>
+                </p>
+
+                <p id="loginMsg" style="font-weight: bold;"></p>
+                <button type="submit" class="auth-btn">Log In</button>
+            </form>
+
+            <!-- reset password box -->
+            <div id="resetBox">
+                <label for="resetEmail">Enter your email to reset your password:</label>
+                <input type="text" id="resetEmail" placeholder="example@email.com">
+                <p id="resetMsg" style="font-weight: bold;"></p>
+                <button type="button" class="auth-btn" onclick="sendReset()">Send reset link</button>
+            </div>
+
+            <p class="small-note">Don't have an account? <a href="signup.html">Sign Up here</a></p>
+        </section>
     </main>
 
     <footer>
@@ -35,5 +74,51 @@
 
     <!-- js file -->
     <script src="js/script.js"></script>
+
+    <!-- small script inside this page -->
+    <script>
+        // check the login form
+        function checkLogin() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var msg = document.getElementById("loginMsg");
+
+            if (email === "" || password === "") {
+                msg.style.color = "#C0392B";
+                msg.innerHTML = "Please fill in all the fields.";
+            } else if (email.indexOf("@") === -1 || email.indexOf(".") === -1) {
+                msg.style.color = "#C0392B";
+                msg.innerHTML = "Please write a correct email.";
+            } else {
+                msg.style.color = "#1E8449";
+                msg.innerHTML = "Welcome back to Page2Screen!";
+            }
+            return false;   // no server, so we do not send the form
+        }
+
+        // show or hide the reset box
+        function showReset() {
+            var box = document.getElementById("resetBox");
+            if (box.style.display === "block") {
+                box.style.display = "none";
+            } else {
+                box.style.display = "block";
+            }
+        }
+
+        // check the email of the reset box
+        function sendReset() {
+            var email = document.getElementById("resetEmail").value;
+            var msg = document.getElementById("resetMsg");
+
+            if (email === "" || email.indexOf("@") === -1 || email.indexOf(".") === -1) {
+                msg.style.color = "#C0392B";
+                msg.innerHTML = "Please write a correct email.";
+            } else {
+                msg.style.color = "#1E8449";
+                msg.innerHTML = "A reset link was sent to " + email;
+            }
+        }
+    </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Movie and book reviews in one place">
@@ -24,9 +24,32 @@
     </header>
 
     <!-- page content -->
-    <main>
-    <h2>Sign Up</h2>
-    <p>Create a new account and start exploring movies and their books.</p>
+    <main class="auth-page">
+        <section class="auth-card">
+            <h2>Create Your Account</h2>
+            <p class="auth-sub">Join Page2Screen to explore movies and the books behind them.</p>
+
+            <form id="signupForm" onsubmit="return checkSignup()">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" name="email" placeholder="example@email.com">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="8 characters or more">
+
+                <label for="confirm">Confirm Password:</label>
+                <input type="password" id="confirm" name="confirm" placeholder="Write your password again">
+
+                <!-- messages are added here by the script -->
+                <div id="messages" style="margin-top: 15px;"></div>
+
+                <button type="submit" class="auth-btn">Sign Up</button>
+            </form>
+
+            <p class="small-note">Already have an account? <a href="login.html">Login here</a></p>
+        </section>
     </main>
 
     <footer>

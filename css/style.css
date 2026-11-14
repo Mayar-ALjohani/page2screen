@@ -171,3 +171,106 @@ footer {
     padding: 15px;
     border-top: 3px solid #FFD60A;
 }
+
+
+/* ----- login and sign up pages ----- */
+
+/* space around the card */
+.auth-page {
+    padding: 50px 20px;
+}
+
+/* white card in the middle */
+.auth-card {
+    background-color: #FFFFFF;
+    color: #061A45;
+    width: 500px;
+    margin: 0px auto;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.auth-card h2 {
+    margin: 10px 0px;
+    text-align: center;
+    color: #061A45;
+}
+
+.auth-sub {
+    text-align: center;
+    color: #555555;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.auth-card label {
+    display: block;
+    margin-top: 18px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* text and password fields */
+.auth-card input[type="text"],
+.auth-card input[type="password"] {
+    width: 474px;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.auth-card input:focus {
+    outline: none;
+    border-color: #FFD60A;
+}
+
+/* links inside the card */
+.auth-card a {
+    color: #0A2A6B;
+    font-weight: bold;
+}
+
+.auth-card a:hover {
+    color: #D4A700;
+}
+
+/* remember me line */
+.check-row {
+    margin: 18px 0px;
+    font-size: 14px;
+}
+
+.check-row label {
+    display: inline;
+    margin-left: 6px;
+    font-weight: normal;
+}
+
+/* big dark button with yellow text */
+.auth-btn {
+    width: 500px;
+    margin-top: 10px;
+    padding: 14px 0px;
+    background-color: #061A45;
+    color: #FFD60A;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    background-color: #FFD60A;
+    color: #061A45;
+}
+
+/* text under the button */
+.small-note {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
