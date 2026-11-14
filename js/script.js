@@ -58,11 +58,12 @@ function makeStars(count) {
 }
 
 // change the slider border color when the mouse is on it
-function lightBorder(box) {
-    box.style.borderColor = "#FFFFFF";
+function lightBorder() {
+    document.getElementById("slider").style.borderColor = "#FFFFFF";
 }
 
 // return the yellow color when the mouse leaves
+
 function normalBorder(box) {
     box.style.borderColor = "#FFD60A";
 }
@@ -127,4 +128,8 @@ function checkSignup() {
     }
 
     return false;   // no server, so we do not send the form
+
+function normalBorder() {
+    document.getElementById("slider").style.borderColor = "#FFD60A";
+}
 }
