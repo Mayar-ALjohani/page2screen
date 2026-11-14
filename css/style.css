@@ -18,7 +18,7 @@ header {
 .logo {
     float: left;
     margin: 0;
-    padding-top: 11px;
+    padding-top: 8px;
     color: #FFD60A;
 }
 
@@ -38,7 +38,7 @@ nav {
 .menu li {
     display: inline;
     margin-left: 20px;
-    
+
 }
 
 .menu a {
@@ -64,6 +64,7 @@ nav {
     padding: 20px;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
+
 /* yellow titles */
 .title {
     color: #FFD60A;
@@ -100,6 +101,7 @@ nav {
     font-size: 12px;
     font-style: italic;
 }
+
 /* links inside the white card */
 .card a {
     color: #0A2A6B;
@@ -110,10 +112,12 @@ nav {
 .card a:hover {
     color: #FFD60A;
 }
+
 /* internal links in yellow */
 .jump a {
     color: #FFD60A;
 }
+
 /* slider box */
 .slider {
     position: relative;
@@ -148,6 +152,7 @@ nav {
     margin: 5px 0px;
     color: #FFD60A;
 }
+
 .center {
     text-align: center;
 }
@@ -166,6 +171,7 @@ nav {
 .btn:hover {
     background-color: #FFFFFF;
 }
+
 footer {
     background-color: #061A45;
     text-align: center;

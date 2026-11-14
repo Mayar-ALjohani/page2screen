@@ -14,7 +14,13 @@
 
     <!-- header and navbar -->
     <header id="top">
-        <h1 class="logo">Page2Screen</h1>
+        <!-- logo image, the map links it to the about page -->
+        <h1 class="logo">
+            <img src="images/logo.png" alt="Page2Screen logo" width="220" height="44" usemap="#logomap">
+        </h1>
+        <map name="logomap">
+            <area shape="rect" coords="0,0,220,44" href="about.html" alt="About Us">
+        </map>
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
@@ -26,7 +32,7 @@
     </header>
 
     <!-- page content -->
-    <div class="content">
+    <main class="content">
         <h2>Welcome to Page2Screen</h2>
         <p>Discover movies and the books behind them.</p>
         <!-- links to parts in the same page -->
@@ -38,7 +44,7 @@
         </p>
         <!-- slider: the text is on top of the image -->
         <section>
-            <div class="slider" onmouseover="lightBorder(this)" onmouseout="normalBorder(this)">
+            <div class="slider" id="slider" onmouseover="lightBorder()" onmouseout="normalBorder()">
                 <img id="slideImg" class="slide-img" src="images/harrypotter.jpg" alt="movie picture" width="600"
                     height="340">
                 <div class="slide-text">
@@ -48,8 +54,8 @@
             </div>
             <!-- buttons to change the movie -->
             <p class="center">
-                <input type="button" class="btn" value="< Prev" onclick="prevMovie()">
-                <input type="button" class="btn" value="Next >" onclick="nextMovie()">
+                <button class="btn" onclick="prevMovie()">&lt; Prev</button>
+                <button class="btn" onclick="nextMovie()">Next &gt;</button>
             </p>
         </section>
         <!-- our intro -->
@@ -125,7 +131,7 @@
             <!-- go back to the top of the page -->
             <p class="jump"><a href="#top">Back to top</a></p>
         </section>
-    </div>
+    </main>
 
     <footer>
         <p>&copy; 2026 Page2Screen - CPIS-358</p>

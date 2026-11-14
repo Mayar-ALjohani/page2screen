@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Movie and book reviews in one place">
@@ -7,7 +8,7 @@
     <title>Page2Screen - About Us</title>
     <!-- css file -->
     <link rel="stylesheet" href="css/style.css">
-            <!-- internal css, only for this page -->
+    <!-- internal css, only for this page -->
     <style type="text/css">
         ol li {
             margin-bottom: 8px;
@@ -26,11 +27,18 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- header and navbar -->
     <header>
-        <h1 class="logo">Page2Screen</h1>
+        <!-- logo image, the map links it to the about page -->
+        <h1 class="logo">
+            <img src="images/logo.png" alt="Page2Screen logo" width="220" height="44" usemap="#logomap">
+        </h1>
+        <map name="logomap">
+            <area shape="rect" coords="0,0,220,44" href="about.html" alt="About Us">
+        </map>
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
@@ -42,7 +50,7 @@
     </header>
 
     <!-- page content -->
-        <div class="content">
+    <main class="content">
         <h2>About Us</h2>
 
         <!-- our story -->
@@ -50,11 +58,11 @@
             <article class="card">
                 <h3>Our Story</h3>
                 <p>
-                   
+
                     We are two friends who love watching movies and reading books.
                     Every time we watched a movie, we wondered if it was based on a book
                     and where we could find it. That is why we created Page2Screen.
-                
+
                 </p>
 
                 <h3>Why use our website?</h3>
@@ -93,7 +101,7 @@
         <p style="color: #FFD60A; font-style: italic; text-align: center;">
             "Every great movie starts with a great story."
         </p>
-    </div>
+    </main>
 
     <footer>
         <p>&copy; 2026 Page2Screen - CPIS-358</p>
@@ -102,4 +110,5 @@
     <!-- js file -->
     <script src="js/script.js"></script>
 </body>
+
 </html>

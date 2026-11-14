@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Movie and book reviews in one place">
@@ -17,11 +18,18 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- header and navbar -->
     <header>
-        <h1 class="logo">Page2Screen</h1>
+        <!-- logo image, the map links it to the about page -->
+        <h1 class="logo">
+            <img src="images/logo.png" alt="Page2Screen logo" width="220" height="44" usemap="#logomap">
+        </h1>
+        <map name="logomap">
+            <area shape="rect" coords="0,0,220,44" href="about.html" alt="About Us">
+        </map>
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
@@ -75,7 +83,7 @@
     <!-- js file -->
     <script src="js/script.js"></script>
 
-    
+
     <script>
         // check the login form
         function checkLogin() {
@@ -121,4 +129,5 @@
         }
     </script>
 </body>
+
 </html>

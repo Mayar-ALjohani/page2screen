@@ -63,9 +63,8 @@ function lightBorder() {
 }
 
 // return the yellow color when the mouse leaves
-
-function normalBorder(box) {
-    box.style.borderColor = "#FFD60A";
+function normalBorder() {
+    document.getElementById("slider").style.borderColor = "#FFD60A";
 }
 
 // ----- sign up page -----
@@ -128,8 +127,4 @@ function checkSignup() {
     }
 
     return false;   // no server, so we do not send the form
-
-function normalBorder() {
-    document.getElementById("slider").style.borderColor = "#FFD60A";
-}
 }
